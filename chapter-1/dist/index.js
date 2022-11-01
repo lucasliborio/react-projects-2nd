@@ -152,14 +152,25 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 
 /***/ }),
 
+/***/ "./src/components/list.tsx":
+/*!*********************************!*\
+  !*** ./src/components/list.tsx ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"List\": () => (/* binding */ List)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nconst List = () => {\n    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h2\", null, \" Characters\"));\n};\n\n\n//# sourceURL=webpack://chapter-1/./src/components/list.tsx?");
+
+/***/ }),
+
 /***/ "./src/index.tsx":
 /*!***********************!*\
   !*** ./src/index.tsx ***!
   \***********************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nconst client_1 = __importDefault(__webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\"));\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nfunction App() {\n    return react_1.default.createElement(\"h1\", null, \"Rick and Morty\");\n}\n;\nconst container = document.getElementById('app');\nconst root = client_1.default.createRoot(container);\nroot.render(react_1.default.createElement(App, null));\n\n\n//# sourceURL=webpack://chapter-1/./src/index.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_list__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/components/list */ \"./src/components/list.tsx\");\n\n\n\nfunction App() {\n    return (react__WEBPACK_IMPORTED_MODULE_1___default().createElement(\"div\", null,\n        react__WEBPACK_IMPORTED_MODULE_1___default().createElement(\"h1\", null, \"Rick and Morty\"),\n        react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_list__WEBPACK_IMPORTED_MODULE_2__.List, null)));\n}\n;\nconst container = document.getElementById('app');\nconst root = react_dom_client__WEBPACK_IMPORTED_MODULE_0__.createRoot(container);\nroot.render(react__WEBPACK_IMPORTED_MODULE_1___default().createElement(App, null));\n\n\n//# sourceURL=webpack://chapter-1/./src/index.tsx?");
 
 /***/ }),
 
@@ -422,7 +433,7 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("8291b96a5cc3ec36f2f9")
+/******/ 		__webpack_require__.h = () => ("82a5f5912aeb3da7dfda")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
