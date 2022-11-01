@@ -13,10 +13,10 @@
 #### Buildando o projeto
 * Basicamente criei o webpack.config.js e adicionei todas as informações que queria para meu bundle.
 * Exemplo
-  * Os loaders para transpilar meu codigo ts.
-  * o path dos arquivos, output dos arquivos
+  * Os loaders para transpilar meu codigo ts quanto para o css.
+  * o path para output dos arquivos
   * servidor local com webpack-dev-server
-  * resolve para algumas extensões
+  * resolve para algumas extensões .js .ts .css
 
 #### React concepts
 ##### React Hooks

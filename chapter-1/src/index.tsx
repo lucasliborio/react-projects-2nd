@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import React from 'react'
 import {List} from '@/components/list'
-import './style.css'
+import './styles.css'
 
 function App() {
   return (

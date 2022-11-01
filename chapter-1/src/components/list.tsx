@@ -16,14 +16,15 @@ export const List: React.FC = () => {
   }, [])
   return (
     <div>
-      <h2>Characters</h2>
       {/* Utiliizar mais o operador ternario aqui para conditional renders */}
-      {isLoading ?
-        (<h2>Loading...</h2>)
-        : characters.map(c => (
-          <Character id={c.id} character={c} />
-        ))}
-
+      <h2>Characters</h2>
+      <div className="row">
+        {isLoading ?
+          (<h2>Loading...</h2>)
+          : characters.map(c => (
+            <Character id={c.id} character={c} />
+          ))}
+      </div>
     </div>
   )
 }
