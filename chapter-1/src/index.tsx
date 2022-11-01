@@ -1,10 +1,11 @@
 import ReactDOM from 'react-dom/client';
 import React from 'react'
 import {List} from '@/components/list'
+import './style.css'
 
 function App() {
   return (
-    <div>
+    <div className='container'>
       <h1>Rick and Morty</h1>
       <List />
     </div>

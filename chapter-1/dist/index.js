@@ -181,7 +181,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_list__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/components/list */ \"./src/components/list.tsx\");\n\n\n\nfunction App() {\n    return (react__WEBPACK_IMPORTED_MODULE_1___default().createElement(\"div\", null,\n        react__WEBPACK_IMPORTED_MODULE_1___default().createElement(\"h1\", null, \"Rick and Morty\"),\n        react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_list__WEBPACK_IMPORTED_MODULE_2__.List, null)));\n}\n;\nconst container = document.getElementById('app');\nconst root = react_dom_client__WEBPACK_IMPORTED_MODULE_0__.createRoot(container);\nroot.render(react__WEBPACK_IMPORTED_MODULE_1___default().createElement(App, null));\n\n\n//# sourceURL=webpack://chapter-1/./src/index.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_list__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/components/list */ \"./src/components/list.tsx\");\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './style.css'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\n\n\nfunction App() {\n    return (react__WEBPACK_IMPORTED_MODULE_1___default().createElement(\"div\", { className: 'container' },\n        react__WEBPACK_IMPORTED_MODULE_1___default().createElement(\"h1\", null, \"Rick and Morty\"),\n        react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_list__WEBPACK_IMPORTED_MODULE_2__.List, null)));\n}\n;\nconst container = document.getElementById('app');\nconst root = react_dom_client__WEBPACK_IMPORTED_MODULE_0__.createRoot(container);\nroot.render(react__WEBPACK_IMPORTED_MODULE_1___default().createElement(App, null));\n\n\n//# sourceURL=webpack://chapter-1/./src/index.tsx?");
 
 /***/ }),
 
@@ -444,7 +444,7 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("654ea5fd9a4177462c20")
+/******/ 		__webpack_require__.h = () => ("b4df2aa3614e2d6066f0")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
