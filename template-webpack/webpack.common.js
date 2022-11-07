@@ -8,10 +8,6 @@ module.exports = {
     filename: "index.js",
     path: path.resolve(__dirname, 'build')
   },
-  plugins:[new HtmlWebpackPlugin({
-    template:"./src/index.html",
-
-  })],
   module: {
     rules:[
       {
@@ -20,7 +16,18 @@ module.exports = {
           'style-loader', 
           'css-loader'
         ]
+      },
+      {
+        test: /\.html$/,
+        use:['html-loader']
+      },
+      {
+        test: /\.(svg|png|jpg|gif)$/,
+        type: 'asset/resource'
       }
     ]
-  }
+  },
+  plugins:[new HtmlWebpackPlugin({
+    template:"./src/index.html",
+  })],
 }
