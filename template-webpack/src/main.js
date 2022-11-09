@@ -1,5 +1,5 @@
 import { add } from "./alert-sum"
-import './styles.css'
+import './styles.scss'
 
 const main = document.querySelector('main')
 const input = document.createElement('input')

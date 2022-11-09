@@ -5,7 +5,7 @@ const { default: merge } = require('webpack-merge');
 module.exports = merge(common, {
   mode: 'development',
   output: {
-    filename: "index.js",
+    filename: "[name].js",
     path: path.resolve(__dirname, 'build')
   }
 });

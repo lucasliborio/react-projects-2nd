@@ -3,18 +3,18 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: "./src/main.js",
-  output: {
-    filename: "index.js",
-    path: path.resolve(__dirname, 'build')
+  entry: {
+    main: "./src/main.js",
+    vendor: "./src/vendor.js"
   },
   module: {
     rules:[
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use:[
           'style-loader', 
-          'css-loader'
+          'css-loader',
+          'sass-loader'
         ]
       },
       {
@@ -22,7 +22,7 @@ module.exports = {
         use:['html-loader']
       },
       {
-        test: /\.(svg|png|jpg|gif)$/,
+        test: /\.(svg|png|jpg|gif)$/i,
         type: 'asset/resource'
       }
     ]
