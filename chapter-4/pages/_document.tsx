@@ -1,23 +1,29 @@
-import { RenderPage } from "next/dist/shared/lib/utils";
-import Document, { DocumentContext, DocumentInitialProps } from "next/document";
-
+import React from "react";
+import Document from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
-  static async getInitialProps(
-    ctx: DocumentContext
-  ): Promise<DocumentInitialProps> {
+  static async getInitialProps(ctx: any) {
     const sheet = new ServerStyleSheet();
-
-    const initialProps = await Document.getInitialProps(ctx);
-    return {
-      ...initialProps,
-      styles: (
-        <>
-          {initialProps.styles}
-          {sheet.getStyleElement()}
-        </>
-      ),
-    };
+    const originalRenderPage = ctx.renderPage;
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: (App: any) => (props: any) =>
+            sheet.collectStyles(<App {...props} />),
+        });
+      const initialProps = await Document.getInitialProps(ctx);
+      return {
+        ...initialProps,
+        styles: (
+          <>
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          </>
+        ),
+      };
+    } finally {
+      sheet.seal();
+    }
   }
 }

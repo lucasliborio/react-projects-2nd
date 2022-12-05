@@ -1,6 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 import type { AppProps } from "next/app";
-import { Header } from "../components/header";
+import Header from "../components/header";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -19,8 +19,8 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <GlobalStyle />
-      <Component {...pageProps} />;
       <Header />
+      <Component {...pageProps} />;
     </>
   );
 }
